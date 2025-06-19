@@ -1,0 +1,33 @@
+.sign-in-container {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.sign-in-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.sign-up-section {
+  margin-top: 20px;
+}
+
+.sign-up-section a {
+  color: #007bff;
+  text-decoration: none;
+}
