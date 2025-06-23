@@ -13,3 +13,5 @@ jobs:
     - uses: actions/checkout@v3
     - name: my database contents
       run: mysql -h ${{ secrets.DB_HOST }} --port ${{ secrets.DB_PORT }} -u${{ secrets.DB_USER }} -p${{ secrets.DB_PASSWORD }}
+    - name: running scripts from sql query file on github
+      run: mysql -h ${{ secrets.DB_HOST }} --port ${{ secrets.DB_PORT }} -u${{ secrets.DB_USER }} -p${{ secrets.DB_PASSWORD }} -e "source blog-website/blog_website_mysql_database.sql"
