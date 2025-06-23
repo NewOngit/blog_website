@@ -1,0 +1,9 @@
+name: blog_website_actions
+run-name: showing the database
+on: [push]
+jobs:
+  test-output:
+    runs-on: ubuntu-latest
+    steps:
+    - name: echo the current string
+      run: echo "I am echoing the given string"
