@@ -7,3 +7,9 @@ jobs:
     steps:
     - name: echo the current string
       run: echo "I am echoing the given string"
+  connect-remote:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: my database content
+      run: mysql -h ${{ secrets.DB_HOST }} --port ${{ secrets.DB_PORT }} -u${{ secrets.DB_USER }} -p${{ secrets.DB_USER }}
